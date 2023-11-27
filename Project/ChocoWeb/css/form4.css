@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+    color: #88753D;
+    font-family: 'Inter';
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    background-color: #181818;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.header {
+    text-align: none;
+    font-family: 'Inter', ExtraBold 800;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input, .form-control select {
+    background-color: #4B4B4E;
+    border: 2px solid #4B4B4E;
+    border-radius: 10px;
+    color: #E6E6E8;
+    display: block;
+    font-family: 'Oxanium';
+    font-size: 15px;
+    width: 347px;
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.error input{
+    border: 2px red solid;
+    font-weight: thinner;
+}
+
+.success input{
+    border: 2px green solid;
+    font-weight: thinner;
+}
+
+.form-control p {
+    font-size: 15px;
+    color: red;
+    visibility: hidden;
+    font-weight: thinner;
+}
+
+.error p {
+    visibility: visible;
+    font-weight: thinner;
+}
+
+.bottom {
+    margin-top: 0px;
+}
+
+h2 {
+    margin-left: 10px;
+    padding-top: 8px;
+    color: #E6E6E8;
+    font-family: 'Inter';
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #88753D;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+}
+.btn:hover{
+    background: #8a6b02;
+
+
+}
+
+#create-account-form {
+    width: 400px;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
