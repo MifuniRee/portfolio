@@ -1,9 +1,2 @@
 # Portfolio
-
-### Education
-
-### Work Experience
-
-### Projects
-Something
--
+https://mifuniree.github.io/portfolio/
