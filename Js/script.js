@@ -24,9 +24,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-// Remove toggle icon and navbar when click
-menuIcon.classList.remove('fa-x');
-navbar.classList.remove('active');
+
 
 // scroll section active link
 let sections = document.querySelectorAll('section');
@@ -49,7 +47,27 @@ window.onscroll = () => {
     // Sticky navbar
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY>100);
+
+    // Remove toggle icon and navbar when click
+    menuIcon.classList.remove('fa-x');
+    navbar.classList.remove('active');
 };
+
+// About Tab Content
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(e){
+    for(tablink of tablinks){
+        tablink.classList.remove('active-link');
+    };
+    for (tabcontent of tabcontents){
+        tabcontent.classList.remove('active-tab');
+    };
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(e).classList.add('active-tab')
+};
+
 
 // Scroll Reveal
 ScrollReveal({
@@ -60,8 +78,9 @@ ScrollReveal({
 });
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
 ScrollReveal().reveal('.home-img, .contact-container, .portfolio-box, .conc form', {origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img ', {origin: 'left'});
-ScrollReveal().reveal('.home-content p, .about-content ', {origin: 'right'});
+ScrollReveal().reveal('.home-content h1, .about-col-1, .contact-left ', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .about-col-2 p , .active-tab', {origin: 'bottom'});
+ScrollReveal().reveal('.about-col-2 .btn, .contact-right', {origin: 'right'});
 
 // Type JS
 var typed = new Typed(".multiple-text", {

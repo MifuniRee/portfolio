@@ -9,6 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script src="Js/vanta.js"></script>
+    <script src="Js/form.js"></script>
+
     <title>Calvin Lim Portfolio Website</title>
 </head>
 <body>
@@ -19,25 +21,20 @@
         <i class="fa-regular fa-bars" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <!-- <a href="#about">About</a> -->
-            <!-- <a href="#contact">Contact</a> -->
+            <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <div id="vanta"></div>
     <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, Nice to Meet ya!</h3>
-            <h1>This is Calvin Lim</h1>
+            <h3>Hi! I'm</h3>
+            <h1><span>Calvin</span> Lim</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>i'm majoring in Computer Science with Intelligent system specialization. i am skilled in machine learning, teamwork, like to engage with people, and have strong interest in learning a new thing.</p>
-            <div class="social-media">
-                <a href="https://github.com/MifuniRee"><i class="fa-brands fa-github-alt fa-bounce"></i></a>
-                <a href="https://www.linkedin.com/in/calvin-lim-135494292/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://instagram.com/calvinlim001?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="picture/CV_Calvin_lim.pdf" download class="btn">Download CV</a>
+            <a href="#about" class="btn">More about Me</a>
         </div>
         <div class="home-img">
             <img src="picture/home.jpg" alt="" >
@@ -45,54 +42,49 @@
     </section>
     <!-- About Section -->
 
-    <!-- <section class="about" id="about">
-        <div class="home-img">
-            <img src="picture/home.jpg" alt="" >
-        </div>
-        <div class="about-content">
-            <h1 class="heading">About <span>Me</span></h1>
-            <h3>Data Scientist</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, inventore doloribus at consequatur, aspernatur minus reprehenderit nemo est nostrum dolores, expedita quia placeat eveniet. Esse aut reiciendis dolor dolorem voluptatem?
-            </p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section> -->
-
-    <!-- Contact Section -->
-
-    <!-- <section class="contact" id="contact">
-        <h1 class="heading">Contact Me</h1>
-        <div class="contact-container">
-            <div class="contact-box">
-                <i class="fa-brands fa-linkedin"></i>
-                <h3>Graphic Design</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusamus corporis commodi neque cum tempora magnam corrupti porro tenetur doloribus libero eum minus provident ipsa saepe excepturi, alias nam. Ipsum!
-                </p>
-                <a href="#" class="btn"> Read More</a>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="picture/profile1.jpg" alt="">
             </div>
+            <div class="about-col-2">
+                <h1 class="heading">About <span>Me</span></h1>
+                <p>I am Calvin Lim, majoring in Computer Science with Intelligent system specialization. i have a cheerful
+                    personality and always giving as best as possible while improving my skill in the progress. i have a
+                    competence in machine learning using python, I have experience in adapting new environment and engaging
+                    organization activities. i am skilled in teamwork, like to engage with people, and have strong interest in
+                    learning a new thing.</p>
+                <a href="picture/CV_Calvin_lim.pdf" download class="btn">Download CV</a>
 
-            <div class="contact-box">
-                <i class="fa-brands fa-linkedin"></i>
-                <h3>Programming</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusamus corporis commodi neque cum tempora magnam corrupti porro tenetur doloribus libero eum minus provident ipsa saepe excepturi, alias nam. Ipsum!
-                </p>
-                <a href="#" class="btn"> Read More</a>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designer</li>
+                        <li><span>Web Developer</span><br>Designer</li>
+                        <li><span>App Developer</span><br>Designer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Computer Science from BINUS</li>
+                        <li><span>Web Developer</span><br>Designer</li>
+                        <li><span>App Developer</span><br>Designer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>Designer</li>
+                        <li><span>Web Developer</span><br>Designer</li>
+                        <li><span>App Developer</span><br>Designer</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="contact-box">
-                <i class="fa-brands fa-linkedin"></i>
-                <h3>Marketing</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusamus corporis commodi neque cum tempora magnam corrupti porro tenetur doloribus libero eum minus provident ipsa saepe excepturi, alias nam. Ipsum!
-                </p>
-                <a href="#" class="btn"> Read More</a>
-            </div>   
         </div>
-       
-    </section> -->
+    </section>
 
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
@@ -136,36 +128,48 @@
                     <h4>Speech To Text</h4>
                     <p>Speech Recognition Project that aim to convert audio into text dataset using Wav2Vec Method.</p>
                     <a href="https://github.com/MifuniRee/Speech-To-Text"><i class="fa-sharp fa-light fa-link"></i></a>
-                    
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="picture/Portfolio.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Personal Portfolio</h4>
+                    <p>Personal Website what was created solely on purpose to create portfolio using HTML, CSS and JS.</p>
+                    <a href="https://github.com/MifuniRee/portfolio"><i class="fa-sharp fa-light fa-link"></i></a>
                 </div>
             </div>
         </div>
         
     </section>
 
-    <!-- else section -->
-    <!-- <section class="conc" id="conc">
-        <h1 class="heading">Contact <span>Me!</span></h1>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="heading">Contact <span>Me</span></h1>
+                <p><i class="fa-solid fa-envelopes"></i>calvin.lim001@binus.ac.id</p>
+                <div class="social-media">
+                    <a href="https://github.com/MifuniRee"><i class="fa-brands fa-github-alt fa-bounce"></i></a>
+                    <a href="https://www.linkedin.com/in/calvin-lim-135494292/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/calvinlim001?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form id="contactform">
+                    <input id="Name" type="text" name="Name" placeholder="Your Name" required>
+                    <input id="Email" type="email" name="Email" placeholder="Your Email" required>
+                    <textarea id="Message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>          
+                </form>
+            </div>
+        </div>
 
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Adress">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="<Moonile Phone>">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10">Your Message</textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section> -->
+    </section>
     <!-- Scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Type JS -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="Js/script.js"></script>
     <script src="Js/cursor.js"></script>
-
 </body>
 </html>
