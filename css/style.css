@@ -15,7 +15,6 @@
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #FFA1F5;
-    /* --main-color: #0ef */
 }
 
 html {
@@ -25,6 +24,14 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+}
+#vanta {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    right: 0ch;
+    width: 100%;
+    height: 100%;
 }
 header{
     position: fixed;
