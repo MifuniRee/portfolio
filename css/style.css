@@ -271,7 +271,7 @@ box-shadow: 0 0 1rem var(--main-color);
 }
 .tab-titles{
     display: flex;
-    margin: 2rem 0 5rem;
+    margin: 2rem 0 2rem;
 }
 .tab-links{
     margin-right: 5rem;
@@ -295,11 +295,21 @@ box-shadow: 0 0 1rem var(--main-color);
     width: 50%;
 }
 .tab-contents ul li{
+    font-weight: 900;
+    list-style: none;
+    margin: 1rem 0;
+}
+.tab-contents ul li span{
+    font-weight: 300;
     list-style: none;
     margin: 1rem 0;
 }
 .tab-contents ul li{
     font-size: 1.7rem;
+}
+.tab-contents p{
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 .tab-contents{
     display: none;
@@ -544,6 +554,9 @@ form .btn2{
     .tab-titles{
         display: flex;
         margin: 1rem 0 3rem;
+    }
+    .tab-contents p{
+        font-size: 1.2rem;
     }
     .portfolio h1{
         margin-bottom: 3rem;

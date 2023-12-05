@@ -79,7 +79,7 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
 ScrollReveal().reveal('.home-img, .contact-container, .portfolio-box, .conc form', {origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-col-1, .contact-left ', {origin: 'left'});
-ScrollReveal().reveal('.home-content p, .about-col-2 p , .active-tab', {origin: 'bottom'});
+ScrollReveal().reveal('.home-content p, .about-col-2 .content , .active-tab', {origin: 'bottom'});
 ScrollReveal().reveal('.about-col-2 .btn, .contact-right', {origin: 'right'});
 
 // Type JS
